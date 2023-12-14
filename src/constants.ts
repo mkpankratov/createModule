@@ -1,5 +1,11 @@
-import { resolve } from 'path';
+import indexTxt from './templates/indexTs';
+import stylesTxt from './templates/styles';
+import typesTxt from './templates/typesTS';
 
-export const TEMPLATE_FOLDER = resolve(__dirname, '../src/templates/');
 export const REPLACER = '$moduleName';
 export const DEFAULT_FOCUS = 'index.tsx';
+export const CREATE_MODULE_FILE_LIST = [
+  [indexTxt, 'index.tsx'],
+  [stylesTxt, 'styles.module.css'],
+  [typesTxt, 'types.ts'],
+];
